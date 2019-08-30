@@ -37,12 +37,12 @@ r1[5]= corrouti5;
 end
 for (i = 1; i < 4; i=i+1) begin
 if (r1[i] < r1[i+1] )
-assign ADDR = i+1;
+ADDR = i+1;
 else
 assign ADDR = i;
 if (r1[temp]< r1[ADDR])
-assign temp = ADDR;
+temp = ADDR;
 end
 end
-assign dataout = r1[temp];
+dataout = r1[temp];
 endmodule 
